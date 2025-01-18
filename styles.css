@@ -1,0 +1,269 @@
+body {
+  font-family: montserrat;
+  height: 1000px;
+}
+
+#fixed {
+  position: fixed;
+  display: flex;
+  right: 10px;
+  bottom: 10px;
+  font-size: 24px;
+}
+
+#buttonClear {
+  border-radius: 4px;
+  padding: 4px;
+  border: 1px solid black;
+  background-color: rgb(255,255,255);
+  cursor: pointer;
+}
+
+#buttonClear:hover {
+  background-color: rgb(248, 248, 248)
+}
+
+#buttonClear:active {
+  background-color: rgb(236, 236, 236);
+}
+
+#counterParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#counter {
+  font-size: 80px;
+}
+
+#counterParent button {
+  background-color: rgb(60, 143, 211);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+#counterParent button:hover {
+  opacity: 80%;
+}
+#counterParent button:active {
+  opacity: 50%;
+}
+
+#diceParent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+#diceOutput {
+  font-size: 80px;
+  letter-spacing: 40px;
+  margin-left: 40px;
+}
+
+#rollButton {
+  background-color: rgb(60, 143, 211);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+#diceParent button:hover {
+  opacity: 80%;
+}
+
+#diceParent button:active {
+  opacity: 50%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+#unitConvertorParent {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 40px;
+  width: 200px;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+  row-gap: 12px;
+  margin-bottom: 80px;
+}
+
+#unitHeading {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(57, 172, 211);
+  text-align: center;
+}
+
+#unitInput {
+  width: 75%;
+  font-size: 16px;
+}
+
+#unitRadioButtonParent {
+  display: flex;
+  flex-direction: column;
+}
+
+.unitRadioButtonOption {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6px;
+}
+
+#unitRadioButton1,
+#unitRadioButton2
+{
+  margin: 0px;
+}
+
+.label {
+  font-weight: 500;
+}
+
+#calculateButton {
+  border: none;
+  padding: 8px 12px;
+  background-color: rgb(212, 27, 27);
+  color: white;
+  border-radius: 4px;
+  transition: opacity 80ms;
+}
+
+#calculateButton:hover {
+  opacity: 80%;
+}
+
+#calculateButton:active {
+  opacity: 60%;
+}
+
+#answer {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#diceRollerWithImages {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#diceRollerWithImages #title {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+#diceRollerWithImages #userInputParentDiv {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+#diceRollerWithImages #textbox {
+  width: 120px;
+  text-align: center;
+  
+}
+
+#diceRollerWithImages #rollWithImages {
+  border: 1px solid rgb(194, 0, 0);
+  background-color: rgba(0,0,0,0);
+  color: rgb(194, 0, 0);
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 80ms, border-color 80ms, color 80ms;
+}
+
+#diceRollerWithImages #rollWithImages:hover {
+  background-color: rgb(255, 0, 0);
+  border-color: red;
+  color: white;
+}
+
+#diceRollerWithImages #rollWithImages:active {
+  opacity: 85%;
+  padding: 7px 15px;
+  margin: 1px;
+
+}
+
+#diceRollerWithImages #outputValues {
+  font-size: 24px;
+  font-family: consolas;
+}
+
+#diceRollerWithImages #outputImages {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+#diceRollerWithImages img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+#randomPasswordGenerator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  margin-bottom: 40px;
+}
+
+#randomPasswordGenerator #password {
+  font-size: 24px;
+}
+
+#passwordOptions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+#randomPasswordGenerator .choiceContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+#randomPasswordGenerator input {
+  margin: 0px;
+  accent-color: rgb(91, 255, 91);
+}
+
+#randomPasswordGenerator #generatePassword {
+  border-radius: 100px;
+  border: none;
+  background-color: rgb(89, 33, 141);
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#randomPasswordGenerator #generatePassword:active {
+  opacity: 80%;
+}
+
+#randomPasswordGenerator #textboxRNG {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
